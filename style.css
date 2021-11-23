@@ -3,30 +3,36 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* font-family: 'Josefin Sans', sans-serif; */
-    /* font-family: 'Shippori Antique B1', sans-serif; */
     font-family: 'Abril Fatface', cursive;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Shippori Antique B1', sans-serif;
     background-image: url('rainy_season.jpg');
     background-repeat: no-repeat;
-    color: white;
+    color: rgb(0, 0, 0);
     background-position: center;
     font-size: 120%;
 }
 
 .container {
-    background-color: #050101d0;
+    /* background-color: #050101d0; */
+    background-color: rgb(255, 255, 255, 0.7);
     padding: 2em;
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
     margin: 1em;
     display: flex;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
 }
 
 .temperature {
     font-size: 40px;
+}
+
+.text_transform {
+    text-transform: uppercase;
 }
 
 .icons {
@@ -45,8 +51,8 @@ button {
     height: 38px;
     margin-top: 5px;
     width: 38px;
-    background-color: #7c7c7c2b;
-    color: white;
+    background-color: rgb(7, 1, 1, 0.1);
+    color: rgb(0, 0, 0);
 }
 
 input.search-box {
@@ -54,9 +60,16 @@ input.search-box {
     outline: none;
     padding: 0.3em 1em;
     border-radius: 26px;
-    background: #7c7c7c2b;
-    color: white;
+    background-color: rgb(7, 1, 1, 0.1);
+    color: rgb(0, 0, 0);
     font-family: inherit;
     font-size: 115%;
     width: 65%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0, 0.2);
+}
+
+.weather {
+    display: inline-block;
 }
