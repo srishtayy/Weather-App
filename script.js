@@ -37,3 +37,17 @@ document.querySelector(".search button").addEventListener("click", function() {
 
 });
 weather.fetchweatherapi("paris");
+
+function speakcity() {
+    let msg = "Weather in" + document.querySelector(".search-box").value;
+
+    let speech = new SpeechSynthesisUtterance();
+    speech.lang = "en-US";
+
+    speech.text = msg;
+    speech.volume = 1;
+    speech.rate = 0.7;
+    speech.pitch = 1;
+
+    window.speechSynthesis.speak(speech);
+}
