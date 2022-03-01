@@ -39,6 +39,9 @@ let weather = {
 // weather.fetchweatherapi("paris");
 document.querySelector(".search button").addEventListener("click", function() {
     weather.search();
+    document.querySelector(".container").style.backgroundColor = "rgba(0,0,0,0.6)";
+    document.querySelector(".container").style.color = "white";
+    document.querySelector(".search-box").style.color = "white";
 
 
 });
