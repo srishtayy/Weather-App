@@ -3,7 +3,8 @@
 Goal:Tells u about weather of cities across the world!
 Tech Stack-> HTML,CSS,JAVASCRIPT
 Features->
-1) Tells you the temperature
+Tells you about the:->
+1)  Temperature
 2) Description of weather along with the suitable icon
 3) Humidity
 4) Visibility
