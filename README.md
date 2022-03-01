@@ -1,9 +1,13 @@
 # Weather-App
 
 Goal:Tells u about weather of cities across the world!
+
 Tech Stack-> HTML,CSS,JAVASCRIPT
+
 Features->
+
 Tells you about the:->
+
 1)  Temperature
 2) Description of weather along with the suitable icon
 3) Humidity
