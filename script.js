@@ -23,7 +23,10 @@ let weather = {
         document.querySelector(".humidity").innerText =
             "Humidity: " + humidity + "%";
         document.querySelector(".Visibility").innerText = "Visibilty: " + visibility;
+
         document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
+        speakcity();
+
 
 
     },
@@ -32,14 +35,24 @@ let weather = {
     }
 
 };
+// onclick="speakcity()"
+// weather.fetchweatherapi("paris");
 document.querySelector(".search button").addEventListener("click", function() {
     weather.search();
 
+
 });
-weather.fetchweatherapi("paris");
+// document.querySelector(".search button").addEventListener("click", function() {
+//     weather.search();
+//     speakcity();
+
+// });
+
 
 function speakcity() {
-    let msg = "Weather in" + document.querySelector(".search-box").value;
+    let msg = "Weather in" + document.querySelector(".search-box").value + "The Temperature is " +
+        document.querySelector(".temperature").innerText + " with " + document.querySelector(".description").innerText + "         with " + document.querySelector(".humidity").innerText + "whereas   the  " +
+        document.querySelector(".Visibility").innerText;
 
     let speech = new SpeechSynthesisUtterance();
     speech.lang = "en-US";
